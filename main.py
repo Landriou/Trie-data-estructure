@@ -1,0 +1,25 @@
+from trie import *
+
+T = Trie()
+trie_insert(T,"harpo")
+trie_insert(T,"sos")
+trie_insert(T,"hola")
+trie_insert(T,"holanda")
+trie_insert(T,"grosso")
+trie_insert(T,"ossorg")
+T2 = Trie()
+trie_insert(T2,"harpo")
+trie_insert(T2,"sos")
+trie_insert(T2,"hola")
+trie_insert(T2,"holanda")
+trie_insert(T2,"gross")
+
+
+print(CompararTries(T,T2))
+print(tieneInvertida(T))
+recopilarPalabras(T,"h",7)
+print(trie_search(T,"hola"))
+print(trie_search(T,"harpo"))
+print(trie_search(T,"sos"))
+print(trie_search(T,"grosso"))
+autoCompletar(T,"har")
